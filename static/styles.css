@@ -1,0 +1,111 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styles for genre and search results sections */
+.genre-section, .movie-section, .search-results {
+    display: none;
+    text-align: center;
+    margin: 20px auto;
+    width: 60%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.genre-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#genre {
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#movie {
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Style for the search results list */
+.result-container {
+    overflow-x: auto;
+    max-height: 400px; /* Adjust the maximum height as needed */
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    table-layout: fixed; /* Added to fix the column width */
+}
+
+.result-table th,
+.result-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.result-table th {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.result-table td {
+    background-color: #f9f9f9;
+}
+
+.result-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    white-space: normal;
+}
+
+.expanded .result-details {
+    max-height: none;
+}
